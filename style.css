@@ -1,7 +1,69 @@
-h1 {
-    text-align: center;
+body {
+  background-color: rgb(244, 236, 250);
+  font-family: "Poppins", sans-serif;
 }
 
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.8;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 15px 0;
+  text-align: left;
+  border-bottom: 1px dashed rgb(214, 213, 213);
+}
+
+.city:last-child {
+    border: none;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 35px;
+}
+
+.date {
+  opacity: 0.7;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
 footer {
-    text-align: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: grey;
 }
