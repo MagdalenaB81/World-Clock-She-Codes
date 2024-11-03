@@ -32,7 +32,7 @@ select {
 }
 
 .city:last-child {
-    border: none;
+  border: none;
 }
 
 .time {
