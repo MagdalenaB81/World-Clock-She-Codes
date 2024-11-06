@@ -1,4 +1,6 @@
-function updateBarcelonaTime() {
+function updateTime() {
+
+    //barcelona
   let barcelonaElement = document.querySelector("#barcelona");
   if (barcelonaElement) {
     let barcelonaDateElement = barcelonaElement.querySelector(".date");
@@ -10,10 +12,8 @@ function updateBarcelonaTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-}
-setInterval(updateBarcelonaTime, 1000);
 
-function updateDublinTime() {
+   //dublin
   let dublinElement = document.querySelector("#dublin");
   if (dublinElement) {
     let dublinDateElement = dublinElement.querySelector(".date");
@@ -25,24 +25,21 @@ function updateDublinTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-}
-setInterval(updateDublinTime, 1000);
 
-
-function updateNewyorkTime() {
   let newyorkElement = document.querySelector("#newyork");
   if (newyorkElement) {
-  let newyorkDateElement = newyorkElement.querySelector(".date");
-  let newyorkTimeElement = newyorkElement.querySelector(".time");
-  let newyorkTime = moment().tz("America/New_York");
+    let newyorkDateElement = newyorkElement.querySelector(".date");
+    let newyorkTimeElement = newyorkElement.querySelector(".time");
+    let newyorkTime = moment().tz("America/New_York");
 
-  newyorkDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  newyorkTimeElement.innerHTML = newyorkTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+    newyorkDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    newyorkTimeElement.innerHTML = newyorkTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
 }
-}
-setInterval(updateNewyorkTime, 1000);
+
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
